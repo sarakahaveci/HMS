@@ -48,7 +48,7 @@
             this.FileNumber = new System.Windows.Forms.TextBox();
             this.PatName = new System.Windows.Forms.TextBox();
             this.ContactPhone = new System.Windows.Forms.TextBox();
-            this.RecordCreationDate = new System.Windows.Forms.TextBox();
+            this.c = new System.Windows.Forms.TextBox();
             this.FirstVIstit = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -111,6 +111,7 @@
             this.PatID.TabIndex = 3;
             this.PatID.Text = "PatientID";
             this.PatID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PatID.TextChanged += new System.EventHandler(this.PatID_TextChanged);
             // 
             // City
             // 
@@ -308,18 +309,18 @@
             this.ContactPhone.Text = "ContactPhone";
             this.ContactPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // RecordCreationDate
+            // c
             // 
-            this.RecordCreationDate.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.RecordCreationDate.Font = new System.Drawing.Font("Century Schoolbook", 12F);
-            this.RecordCreationDate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.RecordCreationDate.Location = new System.Drawing.Point(535, 216);
-            this.RecordCreationDate.Multiline = true;
-            this.RecordCreationDate.Name = "RecordCreationDate";
-            this.RecordCreationDate.Size = new System.Drawing.Size(163, 33);
-            this.RecordCreationDate.TabIndex = 20;
-            this.RecordCreationDate.Text = "RecordCreationDate";
-            this.RecordCreationDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.c.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.c.Font = new System.Drawing.Font("Century Schoolbook", 12F);
+            this.c.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.c.Location = new System.Drawing.Point(535, 216);
+            this.c.Multiline = true;
+            this.c.Name = "c";
+            this.c.Size = new System.Drawing.Size(163, 33);
+            this.c.TabIndex = 20;
+            this.c.Text = "RecordCreationDate";
+            this.c.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FirstVIstit
             // 
@@ -436,7 +437,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FirstVIstit);
-            this.Controls.Add(this.RecordCreationDate);
+            this.Controls.Add(this.c);
             this.Controls.Add(this.ContactPhone);
             this.Controls.Add(this.PatName);
             this.Controls.Add(this.FileNumber);
@@ -488,7 +489,7 @@
         private System.Windows.Forms.TextBox FileNumber;
         private System.Windows.Forms.TextBox PatName;
         private System.Windows.Forms.TextBox ContactPhone;
-        private System.Windows.Forms.TextBox RecordCreationDate;
+        private System.Windows.Forms.TextBox c;
         private System.Windows.Forms.TextBox FirstVIstit;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

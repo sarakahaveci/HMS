@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             Con.Open();
-            string query = "insert into PatientsTable values(" + PatID.Text + ", " + PatName.Text + "," + FileNumber.Text + "," + CitizenID.Text + "," + Gender.Text + ", " + Birthdate.Text + ", " + Nationality.Text + ", " + PhoneNum.Text + ", " + Email.Text + "," + Country.Text + "," + City.Text + "," + Street.Text + "," + Address1.Text + "," + Address2.Text + "," + ContactPerson.Text + "," + ContactRelation.Text + "," + ContactPhone.Text + ", " + FirstVIstit.Text + "," + RecordCreationDate.Text + ")";
+            string query = "insert into PatientsTable values(" + PatID.Text + ", " + PatName.Text + "," + FileNumber.Text + "," + CitizenID.Text + "," + Gender.Text + ", " + Birthdate.Text + ", " + Nationality.Text + ", " + PhoneNum.Text + ", " + Email.Text + "," + Country.Text + "," + City.Text + "," + Street.Text + "," + Address1.Text + "," + Address2.Text + "," + ContactPerson.Text + "," + ContactRelation.Text + "," + ContactPhone.Text + ", " + FirstVIstit.Text + "," + c.Text + ")";
             SqlCommand cmd = new SqlCommand(query, Con);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Patient Added Sucecsfully");
@@ -79,6 +79,11 @@ namespace WindowsFormsApp1
                 Con.Close();
                 populate();
             }
+        }
+
+        private void PatID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
