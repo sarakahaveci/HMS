@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patients));
             this.patient = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.PatID = new System.Windows.Forms.TextBox();
             this.City = new System.Windows.Forms.TextBox();
@@ -56,7 +55,6 @@
             this.Gender = new System.Windows.Forms.ComboBox();
             this.PatGV = new System.Windows.Forms.DataGridView();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PatGV)).BeginInit();
             this.SuspendLayout();
@@ -76,16 +74,6 @@
             this.patient.TabIndex = 0;
             this.patient.Text = "Patients";
             this.patient.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(561, 255);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -118,7 +106,7 @@
             this.City.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.City.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.City.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.City.Location = new System.Drawing.Point(367, 181);
+            this.City.Location = new System.Drawing.Point(367, 82);
             this.City.Multiline = true;
             this.City.Name = "City";
             this.City.Size = new System.Drawing.Size(163, 32);
@@ -131,7 +119,7 @@
             this.ContactRelation.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ContactRelation.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.ContactRelation.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ContactRelation.Location = new System.Drawing.Point(536, 116);
+            this.ContactRelation.Location = new System.Drawing.Point(366, 243);
             this.ContactRelation.Multiline = true;
             this.ContactRelation.Name = "ContactRelation";
             this.ContactRelation.Size = new System.Drawing.Size(163, 32);
@@ -144,7 +132,7 @@
             this.ContactPerson.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ContactPerson.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.ContactPerson.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ContactPerson.Location = new System.Drawing.Point(536, 83);
+            this.ContactPerson.Location = new System.Drawing.Point(366, 210);
             this.ContactPerson.Multiline = true;
             this.ContactPerson.Name = "ContactPerson";
             this.ContactPerson.Size = new System.Drawing.Size(163, 32);
@@ -157,7 +145,7 @@
             this.Address1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Address1.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Address1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Address1.Location = new System.Drawing.Point(369, 247);
+            this.Address1.Location = new System.Drawing.Point(367, 145);
             this.Address1.Multiline = true;
             this.Address1.Name = "Address1";
             this.Address1.Size = new System.Drawing.Size(163, 32);
@@ -170,7 +158,7 @@
             this.Street.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Street.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Street.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Street.Location = new System.Drawing.Point(368, 214);
+            this.Street.Location = new System.Drawing.Point(367, 115);
             this.Street.Multiline = true;
             this.Street.Name = "Street";
             this.Street.Size = new System.Drawing.Size(163, 32);
@@ -183,7 +171,7 @@
             this.Address2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Address2.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Address2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Address2.Location = new System.Drawing.Point(368, 280);
+            this.Address2.Location = new System.Drawing.Point(367, 178);
             this.Address2.Multiline = true;
             this.Address2.Name = "Address2";
             this.Address2.Size = new System.Drawing.Size(163, 32);
@@ -196,7 +184,7 @@
             this.Country.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Country.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Country.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Country.Location = new System.Drawing.Point(368, 148);
+            this.Country.Location = new System.Drawing.Point(201, 378);
             this.Country.Multiline = true;
             this.Country.Name = "Country";
             this.Country.Size = new System.Drawing.Size(163, 32);
@@ -209,7 +197,7 @@
             this.Email.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Email.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Email.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Email.Location = new System.Drawing.Point(368, 115);
+            this.Email.Location = new System.Drawing.Point(200, 345);
             this.Email.Multiline = true;
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(163, 32);
@@ -222,7 +210,7 @@
             this.PhoneNum.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.PhoneNum.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.PhoneNum.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.PhoneNum.Location = new System.Drawing.Point(369, 82);
+            this.PhoneNum.Location = new System.Drawing.Point(200, 311);
             this.PhoneNum.Multiline = true;
             this.PhoneNum.Name = "PhoneNum";
             this.PhoneNum.Size = new System.Drawing.Size(163, 32);
@@ -235,7 +223,7 @@
             this.Nationality.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Nationality.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Nationality.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Nationality.Location = new System.Drawing.Point(200, 279);
+            this.Nationality.Location = new System.Drawing.Point(200, 277);
             this.Nationality.Multiline = true;
             this.Nationality.Name = "Nationality";
             this.Nationality.Size = new System.Drawing.Size(163, 32);
@@ -248,7 +236,7 @@
             this.Birthdate.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.Birthdate.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.Birthdate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Birthdate.Location = new System.Drawing.Point(200, 245);
+            this.Birthdate.Location = new System.Drawing.Point(200, 243);
             this.Birthdate.Multiline = true;
             this.Birthdate.Name = "Birthdate";
             this.Birthdate.Size = new System.Drawing.Size(163, 32);
@@ -301,7 +289,7 @@
             this.ContactPhone.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ContactPhone.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.ContactPhone.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ContactPhone.Location = new System.Drawing.Point(536, 150);
+            this.ContactPhone.Location = new System.Drawing.Point(366, 277);
             this.ContactPhone.Multiline = true;
             this.ContactPhone.Name = "ContactPhone";
             this.ContactPhone.Size = new System.Drawing.Size(163, 32);
@@ -314,7 +302,7 @@
             this.c.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.c.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.c.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.c.Location = new System.Drawing.Point(535, 216);
+            this.c.Location = new System.Drawing.Point(367, 345);
             this.c.Multiline = true;
             this.c.Name = "c";
             this.c.Size = new System.Drawing.Size(163, 33);
@@ -327,7 +315,7 @@
             this.FirstVIstit.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.FirstVIstit.Font = new System.Drawing.Font("Century Schoolbook", 12F);
             this.FirstVIstit.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.FirstVIstit.Location = new System.Drawing.Point(536, 183);
+            this.FirstVIstit.Location = new System.Drawing.Point(366, 311);
             this.FirstVIstit.Multiline = true;
             this.FirstVIstit.Name = "FirstVIstit";
             this.FirstVIstit.Size = new System.Drawing.Size(163, 32);
@@ -396,7 +384,7 @@
             this.Gender.Items.AddRange(new object[] {
             " Male",
             "Female"});
-            this.Gender.Location = new System.Drawing.Point(200, 214);
+            this.Gender.Location = new System.Drawing.Point(200, 212);
             this.Gender.Name = "Gender";
             this.Gender.Size = new System.Drawing.Size(163, 28);
             this.Gender.TabIndex = 26;
@@ -406,9 +394,9 @@
             // 
             this.PatGV.BackgroundColor = System.Drawing.Color.LightGray;
             this.PatGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PatGV.Location = new System.Drawing.Point(705, 82);
+            this.PatGV.Location = new System.Drawing.Point(552, 82);
             this.PatGV.Name = "PatGV";
-            this.PatGV.Size = new System.Drawing.Size(359, 300);
+            this.PatGV.Size = new System.Drawing.Size(512, 339);
             this.PatGV.TabIndex = 27;
             this.PatGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatGV_CellContentClick);
             // 
@@ -417,7 +405,7 @@
             this.textBox13.BackColor = System.Drawing.SystemColors.Window;
             this.textBox13.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.textBox13.Location = new System.Drawing.Point(734, 45);
+            this.textBox13.Location = new System.Drawing.Point(653, 46);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(303, 30);
             this.textBox13.TabIndex = 28;
@@ -429,7 +417,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1086, 396);
+            this.ClientSize = new System.Drawing.Size(1086, 422);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.PatGV);
             this.Controls.Add(this.Gender);
@@ -455,12 +443,10 @@
             this.Controls.Add(this.City);
             this.Controls.Add(this.PatID);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.patient);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patients";
             this.Text = "Home";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PatGV)).EndInit();
             this.ResumeLayout(false);
@@ -471,7 +457,6 @@
         #endregion
 
         private System.Windows.Forms.Label patient;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox PatID;
         private System.Windows.Forms.TextBox City;
